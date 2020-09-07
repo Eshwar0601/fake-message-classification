@@ -17,6 +17,7 @@ class FileInput extends Component {
 
     handleSubmit(event) {
       alert('your Message was submitted: ' + this.state.value);
+      alert('The code is under constuction the prediction cannot be dont at this moment !');
       event.preventDefault();
     }
 
