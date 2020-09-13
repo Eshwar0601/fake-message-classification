@@ -23,12 +23,19 @@ class FileInput extends Component {
 
     render() {
       return (
-        <form onSubmit={this.handleSubmit}>
-          <label>
-            <input type="text" value={this.state.value} onChange={this.handleChange} />
-          </label>
-          <input type="submit" value="Submit" />
-        </form>
+        <div className="container">
+          <div className="row">
+            <div className="col col-12">
+              <form onSubmit={this.handleSubmit}>
+                
+                <textarea className="form-control mt-5 input-form" type="text" value={this.state.value} onChange={this.handleChange} />
+                
+                <button  className="btn btn-lg mt-5 bg-warning" type="submit" value="Submit">SUBMIT</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
       );
     }
 
